@@ -1,0 +1,157 @@
+/*PADRÃO*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+/*HEADER*/
+#header {
+    background: #f7b600;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 1rem
+}
+
+.header-logo, .header-navbar {
+    padding: 1rem;
+}
+
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5rem;
+}
+
+h1 > .header-logo-white {
+    color: #FFF;
+}
+
+.navbar-item:link, .navbar-item:visited {
+    color: #FFF;
+    padding: 5px;
+}
+
+.navbar-item:hover {
+    background: white;
+    color: #f7b600
+} 
+
+
+/*PRINCIPAL*/
+#principal {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+}
+
+/*FEED*/
+.principal-feed-postagem {
+    background-color: #FFF;
+
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.principal-feed-postagem > h2 {
+    color: #f7b600
+}
+
+.principal-feed-postagem > h3 {
+    font-size: medium;
+}
+
+.principal-feed-postagem > img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/*FEED LINKS*/
+.principal-button:link, .principal-button:visited {
+    color: #f7b600;
+}
+
+.principal-button:hover {
+    text-decoration: underline;
+}
+
+
+/*LATERAL*/
+.principal-lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.principal-recentes, .principal-categorias {
+    background-color: #FFF;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.principal-recentes-topo, .principal-categorias-topo {
+    width: 95%;
+    height: auto;
+    background: gray;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.principal-recentes-topo > h4, .principal-categorias-topo > h4 {
+    font-size: 1.3rem;
+    color: #4e4e4e;
+}
+
+.principal-recentes-post, .principal-categorias-nav {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.principal-categorias-nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/*FOOTER*/
+#footer {
+    background: gray;
+    
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    
+    margin: auto;
+    padding: 1rem;
+}
+
+#footer > h1 {
+    color: #000;
+    font-size: 1.3rem;
+}
